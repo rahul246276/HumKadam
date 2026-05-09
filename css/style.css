@@ -136,13 +136,19 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   gap: 12px;
 }
 .nav-logo-icon {
-  width: 44px; height: 44px;
-  background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
-  border-radius: 50%;
+  width: 100px; height: 100px;
+  background: transparent;
+  border-radius: 0;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 16px rgba(123,28,46,0.3);
+  box-shadow: none;
+  overflow: hidden;
 }
-.nav-logo-icon svg { width: 22px; height: 22px; fill: var(--gold-light); }
+.nav-logo-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
 .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
 .nav-logo-name {
   font-family: var(--font-display);
@@ -1465,6 +1471,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 .footer-brand .nav-logo-name { color: #fff; font-size: 1.6rem; }
 .footer-brand .nav-logo-tagline { color: var(--gold); }
+.footer-brand .nav-logo-icon {
+  width: 64px; height: 64px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
 .footer-about {
   font-size: 0.9rem;
   line-height: 1.8;
