@@ -1472,7 +1472,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .footer-brand .nav-logo-name { color: #fff; font-size: 1.6rem; }
 .footer-brand .nav-logo-tagline { color: var(--gold); }
 .footer-brand .nav-logo-icon {
-  width: 64px; height: 64px;
+  width: 100px; height: 100px;
   background: transparent;
   border-radius: 0;
   box-shadow: none;
