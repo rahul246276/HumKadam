@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HumKadam – Find Your Perfect Life Partner | Marriage Consultancy Delhi</title>
+  <meta name="description" content="HumKadam is Delhi's most trusted marriage consultancy. We help you find your perfect life partner through verified profiles, personalized matchmaking, and expert guidance." />
+  <meta name="keywords" content="marriage consultancy Delhi, matrimonial services Delhi, matchmaking Delhi, shaadi consultant, HumKadam" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    /* Page-specific extras */
+    .hero-bg-home {
+      background:
+        linear-gradient(135deg, rgba(80,14,28,0.90) 0%, rgba(123,28,46,0.72) 50%, rgba(25,8,12,0.88) 100%),
+        url('images/Hero\ Section\ bg\ .png') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar transparent" id="navbar" data-transparent="true">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">HumKadam</span>
+          <span class="nav-logo-tagline">Together We Walk</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="success-stories.html">Success Stories</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Begin Your Journey</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="success-stories.html">Success Stories</a>
+    <a href="plans.html">Membership Plans</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Begin Your Journey</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg hero-bg-home"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="badge">
+          <i class="fas fa-star" style="color:var(--gold-light)"></i>
+          Delhi's Most Trusted Marriage Consultancy
+        </div>
+        <h1 class="hero-title">
+          Find Your <em>Perfect</em><br>
+          Life Partner<br>
+          with HumKadam
+        </h1>
+        <p class="hero-desc">
+          We don't just match profiles — we build lifelong connections. 
+          Our expert consultants understand your family values, dreams, 
+          and aspirations to help you find the one who truly belongs with you.
+        </p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-gold btn-lg">
+            <i class="fas fa-heart"></i> Start Your Journey
+          </a>
+          <a href="success-stories.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-play-circle"></i> Success Stories
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-num" data-count="12000" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Verified Profiles</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-count="3800" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Happy Couples</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-count="15" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Years Experience</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-count="98" data-suffix="%">0%</span>
+            <span class="hero-stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Find Your Match</h3>
+        <div class="hero-form-field">
+          <label>I am looking for</label>
+          <select>
+            <option>A Bride</option>
+            <option>A Groom</option>
+          </select>
+        </div>
+        <div class="hero-form-row">
+          <div class="hero-form-field">
+            <label>Age From</label>
+            <select>
+              <option>22</option><option>24</option><option>26</option>
+              <option>28</option><option>30</option><option>35</option>
+            </select>
+          </div>
+          <div class="hero-form-field">
+            <label>Age To</label>
+            <select>
+              <option>26</option><option>28</option><option>30</option>
+              <option>32</option><option>35</option><option>40</option>
+            </select>
+          </div>
+        </div>
+        <div class="hero-form-field">
+          <label>Religion</label>
+          <select>
+            <option>Any Religion</option>
+            <option>Hindu</option><option>Muslim</option>
+            <option>Sikh</option><option>Christian</option><option>Jain</option>
+          </select>
+        </div>
+        <div class="hero-form-field">
+          <label>Your Phone Number</label>
+          <input type="tel" placeholder="+91 98********" />
+        </div>
+        <a href="contact.html" class="btn btn-primary">
+          <i class="fas fa-search"></i> Search Profiles
+        </a>
+        <p style="text-align:center;margin-top:14px;font-size:0.78rem;color:rgba(255,255,255,0.45)">
+          <i class="fas fa-lock" style="margin-right:5px"></i>100% Confidential & Secure
+        </p>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"><div class="wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><i class="fas fa-shield-alt"></i> 100% Verified Profiles</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><i class="fas fa-user-tie"></i> Expert Marriage Consultants</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><i class="fas fa-lock"></i> Privacy Protected</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><i class="fas fa-heart"></i> 3800+ Successful Matches</div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><i class="fas fa-star"></i> 15+ Years of Trust</div>
+    </div>
+  </div>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section-pad services-overview">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Complete Matrimonial <span>Services</span></h2>
+        <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
+        <p class="section-desc centered">
+          From first consultation to your wedding day, HumKadam walks every step alongside you 
+          with unmatched expertise and heartfelt dedication.
+        </p>
+      </div>
+
+      <div class="services-grid-home">
+        <div class="service-card-home fade-up delay-1">
+          <div class="service-icon"><i class="fas fa-search-heart"></i></div>
+          <h3>Personalized Matchmaking</h3>
+          <p>Our consultants study your complete profile, family background, and life goals to curate handpicked matches that align on every level.</p>
+          <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card-home fade-up delay-2">
+          <div class="service-icon"><i class="fas fa-user-check"></i></div>
+          <h3>Verified Profiles</h3>
+          <p>Every profile on our platform goes through rigorous background verification including identity, education, profession, and family checks.</p>
+          <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card-home fade-up delay-3">
+          <div class="service-icon"><i class="fas fa-users"></i></div>
+          <h3>Family Consultation</h3>
+          <p>We involve your family at every stage, ensuring alignment in values, traditions, and expectations for a harmonious union.</p>
+          <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card-home fade-up delay-1">
+          <div class="service-icon"><i class="fas fa-gem"></i></div>
+          <h3>Premium Membership</h3>
+          <p>Access an exclusive network of pre-screened, high-profile matches with dedicated consultant support and priority assistance.</p>
+          <a href="plans.html" class="service-link">View Plans <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card-home fade-up delay-2">
+          <div class="service-icon"><i class="fas fa-comments"></i></div>
+          <h3>Relationship Guidance</h3>
+          <p>Our experienced counselors provide pre-marital guidance, communication coaching, and compatibility assessments.</p>
+          <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card-home fade-up delay-3">
+          <div class="service-icon"><i class="fas fa-globe-asia"></i></div>
+          <h3>NRI Matrimony</h3>
+          <p>Specialized matchmaking for NRI families and professionals, bridging hearts across geographies with trusted expertise.</p>
+          <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROFILES -->
+  <section class="section-pad profiles-section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Featured Profiles</span>
+        <h2 class="section-title">Discover <span>Exceptional</span> Matches</h2>
+        <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
+        <p class="section-desc centered">A glimpse into our curated network of verified, accomplished individuals seeking their life partner.</p>
+      </div>
+
+      <div class="profiles-grid">
+        <div class="profile-card scale-in delay-1">
+          <div class="profile-img-wrap">
+            <img src="images/Profile Section 2.png" alt="Profile" loading="lazy" />
+            <span class="profile-badge verified">Verified</span>
+          </div>
+          <div class="profile-info">
+            <p class="profile-name">Priya Sharma</p>
+            <div class="profile-details">
+              <span class="profile-tag">28 yrs</span>
+              <span class="profile-tag">Delhi</span>
+              <span class="profile-tag">MBA</span>
+              <span class="profile-tag">Hindu</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-maroon btn-sm">View Profile</a>
+          </div>
+        </div>
+
+        <div class="profile-card scale-in delay-2">
+          <div class="profile-img-wrap">
+            <img src="images/Profile Section 1.png" alt="Profile" loading="lazy" />
+            <span class="profile-badge">Premium</span>
+          </div>
+          <div class="profile-info">
+            <p class="profile-name">Arjun Kapoor</p>
+            <div class="profile-details">
+              <span class="profile-tag">31 yrs</span>
+              <span class="profile-tag">Gurgaon</span>
+              <span class="profile-tag">Engineer</span>
+              <span class="profile-tag">Hindu</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-maroon btn-sm">View Profile</a>
+          </div>
+        </div>
+
+        <div class="profile-card scale-in delay-3">
+          <div class="profile-img-wrap">
+            <img src="images/Profile section 4.png" alt="Profile" loading="lazy" />
+            <span class="profile-badge verified">Verified</span>
+          </div>
+          <div class="profile-info">
+            <p class="profile-name">Neha Gupta</p>
+            <div class="profile-details">
+              <span class="profile-tag">26 yrs</span>
+              <span class="profile-tag">Noida</span>
+              <span class="profile-tag">Doctor</span>
+              <span class="profile-tag">Hindu</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-maroon btn-sm">View Profile</a>
+          </div>
+        </div>
+
+        <div class="profile-card scale-in delay-4">
+          <div class="profile-img-wrap">
+            <img src="images/profile Section 3.png" alt="Profile" loading="lazy" />
+            <span class="profile-badge">Elite</span>
+          </div>
+          <div class="profile-info">
+            <p class="profile-name">Rahul Verma</p>
+            <div class="profile-details">
+              <span class="profile-tag">33 yrs</span>
+              <span class="profile-tag">Delhi</span>
+              <span class="profile-tag">CA</span>
+              <span class="profile-tag">Hindu</span>
+            </div>
+            <a href="contact.html" class="btn btn-outline-maroon btn-sm">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:48px">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-users"></i> View All Profiles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section-pad why-us">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content fade-up">
+          <span class="section-label">Why HumKadam</span>
+          <h2 class="section-title" style="color:#fff">Why Thousands Trust <span>Our Expertise</span></h2>
+          <p class="section-desc" style="color:rgba(255,255,255,0.7)">
+            We combine traditional values with modern matchmaking to create connections that last a lifetime. 
+            Our approach is personal, thorough, and always focused on your happiness.
+          </p>
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="why-feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <div class="why-feature-text">
+                <h4>Rigorous Verification Process</h4>
+                <p>Every profile is manually verified by our team. We check identity documents, educational certificates, professional credentials, and conduct background screenings.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon"><i class="fas fa-user-tie"></i></div>
+              <div class="why-feature-text">
+                <h4>Dedicated Personal Consultant</h4>
+                <p>You get a dedicated marriage consultant who understands your unique requirements and works personally to find your compatible match.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon"><i class="fas fa-heart"></i></div>
+              <div class="why-feature-text">
+                <h4>Values-Based Compatibility Matching</h4>
+                <p>Beyond horoscopes and profiles, we assess deeper compatibility — shared values, family expectations, and life aspirations.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon"><i class="fas fa-lock"></i></div>
+              <div class="why-feature-text">
+                <h4>Complete Privacy & Confidentiality</h4>
+                <p>Your personal information and profile details are never shared without your explicit consent. We respect your privacy at every step.</p>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:40px">
+            <a href="about.html" class="btn btn-gold">
+              <i class="fas fa-info-circle"></i> Learn About Us
+            </a>
+          </div>
+        </div>
+
+        <div class="why-image-wrap scale-in">
+          <img src="images/Weading .png" alt="Happy couple" loading="lazy" />
+          <div class="why-image-badge">
+            <div class="why-badge-icon">💍</div>
+            <div class="why-badge-text">
+              <span class="num" data-count="3800" data-suffix="+">3800+</span>
+              <span class="label">Successful Marriages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section-pad testimonials">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title">What Our <span>Couples</span> Say</h2>
+        <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
+        <p class="section-desc centered">Real stories from real couples who found their forever through HumKadam.</p>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"HumKadam changed our lives. Our consultant, Mrs. Sunita, understood exactly what we were looking for. Within 3 months, we had met the perfect match. The entire process was professional, warm, and completely trustworthy."</p>
+            <div class="testimonial-author">
+              <img src="images/Profile Section 1.png" alt="Author" class="author-avatar" />
+              <div>
+                <p class="author-name">Ananya & Vikram Malhotra</p>
+                <p class="author-info">Married in 2023 · Delhi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"We had tried several platforms before HumKadam. The difference here is the personal attention. They took time to truly understand our family's values and found someone who fits perfectly in our lives."</p>
+            <div class="testimonial-author">
+              <img src="images/Weading .png" alt="Author" class="author-avatar" />
+              <div>
+                <p class="author-name">Kavita & Rohit Agarwal</p>
+                <p class="author-info">Married in 2024 · Noida</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"As an NRI family based in the UK, we were skeptical about finding the right match back home. HumKadam's NRI service was exceptional — they managed everything seamlessly from start to finish."</p>
+            <div class="testimonial-author">
+              <img src="images/Profile Section 2.png" alt="Author" class="author-avatar" />
+              <div>
+                <p class="author-name">Simran & Harpreet Singh</p>
+                <p class="author-info">Married in 2023 · UK / Punjab</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">"The Elite membership was worth every rupee. Dedicated support, premium verified profiles, and a consultant who felt like family. We're now happily married and expecting our first child!"</p>
+            <div class="testimonial-author">
+              <img src="images/Profile Section 3.png" alt="Author" class="author-avatar" />
+              <div>
+                <p class="author-name">Preethi & Ashwin Nair</p>
+                <p class="author-info">Married in 2022 · Bangalore / Delhi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"My parents were hesitant about matrimonial services, but HumKadam earned our complete trust. Transparent, ethical, and genuinely caring. They don't treat you like a number — they treat you like family."</p>
+            <div class="testimonial-author">
+              <img src="images/Profile section 4.png" alt="Author" class="author-avatar" />
+              <div>
+                <p class="author-name">Riya & Siddharth Joshi</p>
+                <p class="author-info">Married in 2024 · Delhi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots"></div>
+        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner fade-up">
+    <div class="container">
+      <h2>Your Forever Begins with One Step</h2>
+      <p>Join 12,000+ families who trust HumKadam to find their most important relationship.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white btn-lg">
+          <i class="fas fa-heart"></i> Get Started Today
+        </a>
+        <a href="plans.html" class="btn btn-outline btn-lg">
+          <i class="fas fa-crown"></i> View Membership Plans
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="nav-logo footer-brand" href="index.html">
+            <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg></div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">HumKadam</span>
+              <span class="nav-logo-tagline">Together We Walk</span>
+            </div>
+          </a>
+          <p class="footer-about">Delhi's most trusted marriage consultancy, bringing together hearts and families through personalised, verified, and expert matrimonial services since 2008.</p>
+          <div class="social-links">
+            <a href="#" class="social-link fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link ig"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link wa"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link yt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+            <li><a href="success-stories.html"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+            <li><a href="plans.html"><i class="fas fa-chevron-right"></i> Membership Plans</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Matchmaking</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Verified Profiles</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Family Consultation</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> NRI Matrimony</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Premium Membership</a></li>
+            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Relationship Guidance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>B-42, Connaught Place, New Delhi – 110001, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+911141234567">+91 11 4123 4567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-mobile-alt"></i>
+              <a href="tel:+919811234567">+91 98112 34567</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:connect@humkadam.in">connect@humkadam.in</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Mon–Sat: 10:00 AM – 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>HumKadam Matrimonial Services Pvt. Ltd.</span> All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

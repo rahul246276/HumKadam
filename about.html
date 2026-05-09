@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – HumKadam | Delhi's Trusted Marriage Consultancy</title>
+  <meta name="description" content="Learn about HumKadam, Delhi's most trusted marriage consultancy. Our mission, values, expert team, and 15+ years of bringing hearts together." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    .about-mission { background: var(--white); }
+    .mission-vision-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .mv-card {
+      border-radius: var(--radius-md);
+      padding: 44px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .mv-card.mission { background: linear-gradient(135deg, var(--maroon-dark), var(--maroon)); color: #fff; }
+    .mv-card.vision { background: linear-gradient(135deg, var(--gold-dark), var(--gold)); color: #fff; }
+    .mv-card::before {
+      content: attr(data-label);
+      position: absolute;
+      top: -10px; right: 24px;
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 800;
+      opacity: 0.07;
+      letter-spacing: -0.03em;
+      pointer-events: none;
+    }
+    .mv-icon { font-size: 2.5rem; margin-bottom: 20px; }
+    .mv-card h3 { font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 16px; }
+    .mv-card p { font-size: 0.95rem; line-height: 1.85; opacity: 0.88; }
+    .trust-numbers { background: var(--maroon); padding: 70px 0; }
+    .trust-numbers-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .trust-num-item { padding: 24px 16px; }
+    .trust-num-item .big { font-family: var(--font-display); font-size: 3rem; font-weight: 800; color: var(--gold-light); display: block; line-height: 1; }
+    .trust-num-item .label { font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.12em; }
+    @media (max-width: 768px) {
+      .mission-vision-grid { grid-template-columns: 1fr; }
+      .trust-numbers-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar" data-transparent="false">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">HumKadam</span>
+          <span class="nav-logo-tagline">Together We Walk</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="success-stories.html">Success Stories</a></li>
+        <li><a href="plans.html">Plans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Begin Your Journey</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About Us</a>
+    <a href="services.html">Services</a><a href="success-stories.html">Success Stories</a>
+    <a href="plans.html">Plans</a><a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Begin Your Journey</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>About Us</span>
+      </div>
+      <div class="page-hero-subtitle">Our Story</div>
+      <h1>Two Families. One Dream.<br>Thousands of Stories.</h1>
+      <p>For over 15 years, HumKadam has been Delhi's most trusted bridge between hearts — blending tradition, trust, and modern expertise to create beautiful marriages.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT INTRO -->
+  <section class="section-pad about-intro">
+    <div class="container">
+      <div class="grid-2">
+        <div class="about-story-img fade-up">
+          <img src="images/Hero Section bg .png" alt="HumKadam Office" loading="lazy" />
+          <div class="img-badge">
+            <span class="big-num">15+</span>
+            <span class="badge-label">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="fade-up delay-2">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Born from a Belief that <span>Love Deserves</span> the Best</h2>
+          <div class="ornament" style="justify-content:flex-start"><span></span><i class="fas fa-diamond"></i><span></span></div>
+          <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">
+            HumKadam was founded in 2008 by Mr. Rajesh Mehra and Mrs. Sunita Mehra with a simple yet powerful belief: every person deserves a life partner who understands them deeply, respects their values, and walks alongside them with love and commitment.
+          </p>
+          <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">
+            What started as a small consultancy in Connaught Place, Delhi, has grown into the capital's most respected matrimonial brand — with a team of 25+ expert consultants, a database of 12,000+ verified profiles, and over 3,800 successful marriages to our name.
+          </p>
+          <p style="color:var(--text-mid);line-height:1.85;margin-bottom:36px;">
+            We are not a website or an algorithm. We are real people, with real empathy, helping real families make the most important decision of their lives.
+          </p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-heart"></i> Meet Our Team</a>
+            <a href="services.html" class="btn btn-outline-maroon"><i class="fas fa-list"></i> Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="section-pad about-mission" style="background:var(--beige)">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Our Purpose</span>
+        <h2 class="section-title">Mission & <span>Vision</span></h2>
+        <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
+      </div>
+      <div class="mission-vision-grid">
+        <div class="mv-card mission fade-up delay-1" data-label="Mission">
+          <div class="mv-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To bring together compatible souls through a process rooted in trust, transparency, and deep human understanding — creating not just marriages, but lifelong partnerships built on shared values and mutual respect.</p>
+        </div>
+        <div class="mv-card vision fade-up delay-2" data-label="Vision">
+          <div class="mv-icon">🌟</div>
+          <h3>Our Vision</h3>
+          <p>To be India's most trusted matrimonial brand — where every family feels heard, every individual feels valued, and every match creates a story worth telling for generations to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST NUMBERS -->
+  <section class="trust-numbers">
+    <div class="container">
+      <div class="trust-numbers-grid">
+        <div class="trust-num-item fade-up delay-1">
+          <span class="big" data-count="3800" data-suffix="+">3800+</span>
+          <span class="label">Successful Marriages</span>
+        </div>
+        <div class="trust-num-item fade-up delay-2">
+          <span class="big" data-count="12000" data-suffix="+">12000+</span>
+          <span class="label">Verified Profiles</span>
+        </div>
+        <div class="trust-num-item fade-up delay-3">
+          <span class="big" data-count="15" data-suffix="+">15+</span>
+          <span class="label">Years of Excellence</span>
+        </div>
+        <div class="trust-num-item fade-up delay-4">
+          <span class="big" data-count="98" data-suffix="%">98%</span>
+          <span class="label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section-pad about-values">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">What We Stand For</span>
+        <h2 class="section-title">Our Core <span>Values</span></h2>
+        <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
+      </div>
+      <div class="values-grid">
+        <div class="value-card fade-up delay-1">
+          <div class="value-number">01</div>
+          <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Trust & Integrity</h3>
+          <p>We operate with complete transparency. No hidden fees, no false promises — just honest guidance and genuine commitment to your happiness.</p>
+        </div>
+        <div class="value-card fade-up delay-2">
+          <div class="value-number">02</div>
+          <div class="value-icon"><i class="fas fa-heart"></i></div>
+          <h3>Empathy First</h3>
+          <p>We listen before we suggest. Understanding your story, your hopes, and your family's wishes is the foundation of everything we do.</p>
+        </div>
+        <div class="value-card fade-up delay-3">
+          <div class="value-number">03</div>
+          <div class="value-icon"><i class="fas fa-gem"></i></div>
+          <h3>Excellence Always</h3>
+          <p>From your first consultation to your wedding day, we maintain the highest standards of service, quality, and personal attention.</p>
+        </div>
+        <div class="value-card fade-up delay-1">
+          <div class="value-number">04</div>
+          <div class="value-icon"><i class="fas fa-lock"></i></div>
+          <h3>Privacy Protected</h3>
+          <p>Your personal information stays secure with us. We share details only with your explicit permission, respecting your boundaries at every step.</p>
+        </div>
+        <div class="value-card fade-up delay-2">
+          <div class="value-number">05</div>
+          <div class="value-icon"><i class="fas fa-users"></i></div>
+          <h3>Family Oriented</h3>
+          <p>We understand Indian family dynamics deeply. Our process includes and respects your family's involvement, making the journey truly inclusive.</p>
+        </div>
+        <div class="value-card fade-up delay-3">
+          <div class="value-number">06</div>
+          <div class="value-icon"><i class="fas fa-star"></i></div>
+          <h3>Proven Results</h3>
+          <p>With 3,800+ successful marriages, our track record speaks for itself. We don't just make matches — we create lasting love stories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section-pad team-section">
+    <div class="container">
+      <div class="text-center fade-up">
+        <span class="section-label">Meet the Experts</span>
+        <h2 class="section-title">Our <span>Dedicated</span> Team</h2>
+        <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
+        <p class="section-desc centered">Experienced, empathetic, and deeply passionate about creating the perfect match for every client.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card fade-up delay-1">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80" alt="Founder" loading="lazy" />
+            <div class="team-overlay">
+              <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Mr. Rajesh Mehra</h3>
+            <p class="team-role">Founder & CEO</p>
+          </div>
+        </div>
+        <div class="team-card fade-up delay-2">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Director" loading="lazy" />
+            <div class="team-overlay">
+              <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Mrs. Sunita Mehra</h3>
+            <p class="team-role">Co-Founder & Director</p>
+          </div>
+        </div>
+        <div class="team-card fade-up delay-3">
+          <div class="team-img">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=500&q=80" alt="Consultant" loading="lazy" />
+            <div class="team-overlay">
+              <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Ms. Pooja Sharma</h3>
+            <p class="team-role">Head Relationship Consultant</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Write Your Love Story?</h2>
+      <p>Speak with one of our expert consultants today. No obligations, just an honest conversation.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white btn-lg"><i class="fas fa-phone-alt"></i> Book a Free Consultation</a>
+        <a href="services.html" class="btn btn-outline btn-lg"><i class="fas fa-list"></i> Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="nav-logo footer-brand" href="index.html">
+            <div class="nav-logo-icon"><svg viewBox="0 0 24 24"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg></div>
+            <div class="nav-logo-text"><span class="nav-logo-name">HumKadam</span><span class="nav-logo-tagline">Together We Walk</span></div>
+          </a>
+          <p class="footer-about">Delhi's most trusted marriage consultancy, bringing together hearts and families through personalised, verified, and expert matrimonial services since 2008.</p>
+          <div class="social-links">
+            <a href="#" class="social-link fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link ig"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link wa"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link yt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+          <li><a href="success-stories.html"><i class="fas fa-chevron-right"></i> Success Stories</a></li>
+          <li><a href="plans.html"><i class="fas fa-chevron-right"></i> Membership Plans</a></li>
+          <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Our Services</h4><ul class="footer-links">
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Matchmaking</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Verified Profiles</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Family Consultation</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> NRI Matrimony</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Premium Membership</a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i> Relationship Guidance</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact Us</h4><div class="footer-contact-items">
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>B-42, Connaught Place, New Delhi – 110001</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+911141234567">+91 11 4123 4567</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:connect@humkadam.in">connect@humkadam.in</a></div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 7:00 PM</span></div>
+        </div></div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>HumKadam Matrimonial Services Pvt. Ltd.</span> All Rights Reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Disclaimer</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+</html>
