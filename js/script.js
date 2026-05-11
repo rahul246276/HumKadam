@@ -213,8 +213,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (el) el.addEventListener('input', () => clearError(name));
     });
 
+    // Client-side validation only — actual submission is handled by
+    // the fetch() in contact.html which posts to contact-handler.php
     contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
       let valid = true;
 
       Object.entries(rules).forEach(([name, rule]) => {
@@ -235,21 +236,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      if (valid) {
-        const submitBtn = contactForm.querySelector('[type="submit"]');
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-        setTimeout(() => {
-          contactForm.reset();
-          submitBtn.textContent = 'Send Message';
-          submitBtn.disabled = false;
-          const success = document.getElementById('formSuccess');
-          if (success) {
-            success.style.display = 'block';
-            setTimeout(() => { success.style.display = 'none'; }, 5000);
-          }
-        }, 1500);
-      }
+      // If validation fails, stop the fetch in contact.html from running
+      if (!valid) e.preventDefault();
+      // If valid, do NOT call e.preventDefault() — let contact.html's fetch handler take over
     });
   }
 

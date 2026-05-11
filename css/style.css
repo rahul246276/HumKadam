@@ -206,20 +206,21 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   padding: 10px 26px !important;
   border-radius: 50px;
   font-weight: 600 !important;
-  box-shadow: 0 4px 20px rgba(123,28,46,0.35);
+  box-shadow: 0 4px 20px rgba(214, 69, 96, 0.35);
   transition: var(--transition) !important;
   border: 2px solid var(--gold);
 }
 .nav-cta::after { display: none !important; }
 .navbar.scrolled .nav-cta {
-  background: linear-gradient(135deg, var(--text-dark), #000);
-  color: #000 !important;
+  background: linear-gradient(135deg, var(--text-dark), #911313);
+  color: #fff !important;
   border-color: var(--text-dark);
-  text-shadow: none;
+  text-shadow: 0 2px 4px lch(99.31% 0.01 296.81);
+  font-weight: 700 !important;
 }
 .nav-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(123,28,46,0.45) !important;
+  box-shadow: 0 8px 28px #ffffff !important;
   color: var(--gold-light) !important;
   background: linear-gradient(135deg, var(--gold-dark), var(--gold));
   border-color: var(--gold-dark);
@@ -1627,4 +1628,95 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .testimonial-card { min-width: 100%; }
   .process-steps { grid-template-columns: 1fr 1fr; }
   .comparison-table th, .comparison-table td { padding: 12px 10px; font-size: 0.8rem; }
+}
+
+/* Floating Contact Buttons */
+.floating-contact-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.floating-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.floating-btn span {
+  position: absolute;
+  right: 70px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.floating-btn:hover span {
+  opacity: 1;
+}
+
+.floating-call {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.floating-call:hover {
+  background: linear-gradient(135deg, #128c7e, #0a5d54);
+}
+
+.floating-whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.floating-whatsapp:hover {
+  background: linear-gradient(135deg, #128c7e, #0a5d54);
+}
+
+.floating-btn i {
+  font-size: 24px;
+}
+
+/* Mobile responsive for floating buttons */
+@media (max-width: 768px) {
+  .floating-contact-buttons {
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .floating-btn i {
+    font-size: 20px;
+  }
+  
+  .floating-btn span {
+    right: 60px;
+    font-size: 12px;
+  }
 }

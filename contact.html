@@ -70,46 +70,40 @@
               </div>
               <div>
                 <h4>Office Address</h4>
-                <p>B-42, Connaught Place<br>New Delhi – 110001<br>India</p>
-                <p style="margin-top:8px;font-size:0.82rem;color:var(--gold-dark);font-weight:600;">
-                  <i class="fas fa-subway" style="margin-right:4px"></i> Rajiv Chowk Metro Station
-                </p>
+                <p>Adress-201, Second Floor<br>Aggarwal Chamber, CD Block<br>Pitampura, Delhi-110013</p>
               </div>
             </div>
-
+            
             <div class="contact-info-card fade-up delay-2">
               <div class="contact-icon">
                 <i class="fas fa-phone-alt"></i>
               </div>
               <div>
-                <h4>Phone Numbers</h4>
-                <p><strong>Landline:</strong><br><a href="tel:+911141234567">+91 11 4123 4567</a></p>
-                <p style="margin-top:8px"><strong>Mobile/WhatsApp:</strong><br><a href="tel:+919811234567">+91 98112 34567</a></p>
+                <h4>Contact Number</h4>
+                <p><a href="tel:+919811965203">+91 98119 65203</a></p>
+                <p style="margin-top:8px;font-size:0.82rem;color:var(--gold-dark);font-weight:600;">Call us for immediate assistance</p>
               </div>
             </div>
-
+            
             <div class="contact-info-card fade-up delay-3">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
               </div>
               <div>
                 <h4>Email Address</h4>
-                <p><strong>General Inquiries:</strong><br><a href="mailto:connect@humkadam.in">connect@humkadam.in</a></p>
-                <p style="margin-top:8px"><strong>Membership Support:</strong><br><a href="mailto:support@humkadam.in">support@humkadam.in</a></p>
+                <p><a href="mailto:info@humkadam.in">info@humkadam.in</a></p>
+                <p style="margin-top:8px;font-size:0.82rem;color:var(--gold-dark);font-weight:600;">Send us your requirements</p>
               </div>
             </div>
-
+            
             <div class="contact-info-card fade-up delay-4">
               <div class="contact-icon">
-                <i class="fas fa-clock"></i>
+                <i class="fab fa-whatsapp"></i>
               </div>
               <div>
-                <h4>Office Hours</h4>
-                <p><strong>Monday - Saturday:</strong><br>10:00 AM – 7:00 PM</p>
-                <p style="margin-top:8px"><strong>Sunday:</strong><br>11:00 AM – 5:00 PM</p>
-                <p style="margin-top:8px;font-size:0.82rem;color:var(--gold-dark);font-weight:600;">
-                  <i class="fas fa-calendar-check" style="margin-right:4px"></i> Appointments Available
-                </p>
+                <h4>WhatsApp Support</h4>
+                <p><a href="https://wa.me/919811965203" target="_blank">+91 98119 65203</a></p>
+                <p style="margin-top:8px;font-size:0.82rem;color:var(--gold-dark);font-weight:600;">Chat with our consultants</p>
               </div>
             </div>
           </div>
@@ -126,7 +120,7 @@
           <h3>Send Us a Message</h3>
           <p>Fill out the form below and one of our expert consultants will get back to you within 24 hours.</p>
           
-          <form id="contactForm">
+          <form id="contactForm" action="contact-handler.php" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name *</label>
@@ -147,8 +141,8 @@
                 <div class="form-error"></div>
               </div>
               <div class="form-group">
-                <label for="service">Service Interest *</label>
-                <select id="service" name="service" required>
+                <label for="service_type">Service Interest *</label>
+                <select id="service_type" name="service_type" required>
                   <option value="">Select a Service</option>
                   <option value="basic">Basic Membership</option>
                   <option value="premium">Premium Membership</option>
@@ -189,12 +183,12 @@
         <span class="section-label">Visit Our Office</span>
         <h2 class="section-title">Find Us in <span>Delhi</span></h2>
         <div class="ornament"><span></span><i class="fas fa-diamond"></i><span></span></div>
-        <p class="section-desc centered">Located in the heart of Delhi at Connaught Place, easily accessible by metro and road</p>
+        <p class="section-desc centered">Located in Pitampura, Delhi at Aggarwal Chamber, easily accessible by metro and road</p>
       </div>
 
       <div class="map-wrap fade-up">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.8448746106!2d77.21774631492362!3d28.6314446824168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741eb05%3A0x9b4e6c3b8c7c8c8c!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1234567890"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1234567890!2d77.12345678901234!3d28.69876543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefd37b741eb05%3A0x9b4e6c3b8c7c8c8c!2sAggarwal%20Chamber%2C%20CD%20Block%2C%20Pitampura%2C%20Delhi%20110013!5e0!3m2!1sen!2sin!4v1234567890"
           width="100%" 
           height="100%" 
           style="border:0;" 
@@ -254,7 +248,7 @@
       <h2>Ready to Begin Your Journey?</h2>
       <p>Take the first step towards finding your perfect life partner. Our expert consultants are waiting to help you.</p>
       <div class="cta-actions">
-        <a href="tel:+919811234567" class="btn btn-white btn-lg">
+        <a href="tel:+919811965203" class="btn btn-white btn-lg">
           <i class="fas fa-phone-alt"></i> Call Now
         </a>
         <a href="#contactForm" class="btn btn-outline btn-lg">
@@ -300,10 +294,10 @@
           <li><a href="services.html"><i class="fas fa-chevron-right"></i> Relationship Guidance</a></li>
         </ul></div>
         <div class="footer-col"><h4>Contact Us</h4><div class="footer-contact-items">
-          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>B-42, Connaught Place, New Delhi – 110001</span></div>
-          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+911141234567">+91 11 4123 4567</a></div>
-          <div class="footer-contact-item"><i class="fas fa-mobile-alt"></i><a href="tel:+919811234567">+91 98112 34567</a></div>
-          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:connect@humkadam.in">connect@humkadam.in</a></div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Adress-201, Second Floor, Aggarwal Chamber, CD Block, Pitampura, Delhi-110013</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+919811965203">+91 98119 65203</a></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@humkadam.in">info@humkadam.in</a></div>
+          <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/919811965203" target="_blank">WhatsApp: +91 98119 65203</a></div>
           <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 10:00 AM – 7:00 PM</span></div>
         </div></div>
       </div>
@@ -316,5 +310,59 @@
 
   <button class="back-top" id="backTop"><i class="fas fa-chevron-up"></i></button>
   <script src="js/script.js"></script>
+<script>
+// script.js handles client-side validation and only calls e.preventDefault() if invalid.
+// This listener runs after script.js's listener; if we reach here the form is valid.
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // stop native form POST; we'll use fetch instead
+
+    const formData = new FormData(this);
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const successDiv = document.getElementById('formSuccess');
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    fetch('contact-handler.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Server error ' + response.status);
+        return response.json();
+    })
+    .then(data => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+        if (data.success) {
+            successDiv.style.display = 'block';
+            this.reset();
+            setTimeout(() => { successDiv.style.display = 'none'; }, 5000);
+        } else {
+            alert('Error: ' + (data.message || 'Something went wrong. Please try again.'));
+        }
+    })
+    .catch(error => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        alert('Network error. Please check your connection and try again.');
+        console.error('Contact form error:', error);
+    });
+});
+</script>
+
+<!-- Floating Contact Buttons -->
+<div class="floating-contact-buttons">
+  <a href="tel:+919811965203" class="floating-btn floating-call" title="Call Us">
+    <i class="fas fa-phone"></i>
+    <span>Call</span>
+  </a>
+  <a href="https://wa.me/919811965203?text=Hi%20HumKadam%2C%20I'm%20interested%20in%20your%20matrimonial%20services" target="_blank" class="floating-btn floating-whatsapp" title="WhatsApp Us">
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+</div>
+
 </body>
 </html>
